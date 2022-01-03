@@ -1,0 +1,77 @@
+.container {
+    font-family: 'OpenDyslexicMonoRegular';
+    width: 70vw;
+    margin: auto; }
+
+.container :is(h1, h2, h3, h4, h5, h6) {
+    text-align: center; }
+
+button {
+    background-color: maroon;
+    color: whitesmoke;
+    width: 100px;
+    border-radius: 5px;
+    aspect-ratio: 8/3;
+    cursor: pointer; }
+
+.flexbox {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center; }
+
+.big-space {
+    height: 5vh; }
+
+.calculator, .display {
+    flex-direction: column; }
+
+.text-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-box {
+    width: 1.5em;
+    aspect-ratio: 1/1;
+    background-color: whitesmoke;
+    font-size: 3em;
+    border: none;
+    color: maroon;
+    text-align: center; }
+
+.fraction {
+    flex-direction: column;
+    margin-left: 1.5em;
+    margin-right: 1.5em; }
+
+.separator {
+    width: 150%;
+    border: black 2px solid; }
+
+.colour-table td {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px; }
+
+.legend {
+    border-spacing: 10px; }
+
+.colour-cell{
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px; }
+
+#num0 {background-color: yellow; }
+#num1 {background-color: pink;}
+#num2 {background-color: burlywood; }
+#num3 {background-color: aqua; }
+#num4 {background-color: orange; }
+#num5 {background-color: lime; }
+#num6 {background-color: blue; color: whitesmoke; }
+#num7 {background-color: green; color: whitesmoke; }
+#num8 {background-color: sienna; color: whitesmoke; }
+#num9 {background-color: purple; color: whitesmoke; }

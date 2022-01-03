@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colour Calculator</title>
+
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/opendyslexic" type="text/css"/>
+    <link rel="stylesheet" href="./colour-calculator.css">
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.js" integrity="sha512-+lwWRCGAWhCLRPruF7ruYxRlMQuRD1H9C/Pc/HYcuxachoLufBO7OU66bfFnVsFaHQj3S/CunEimw8alVvkl+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./colour-calculator.js"></script>
+
+    <div class="container">
+        <div class="title">
+            <h1 class="title-text">Colour Calculator</h1>
+            <h3 class="subtitle-text">Ayush Mukherjee</h3>
+        </div>
+        <div class="calculator flexbox">
+            <div class="inputs flexbox">
+                <div class="panel whole-number">
+                    <label class="text-label">whole
+                        <input type="number" class="input-box" min="0"/>
+                    </label>
+                </div>
+                <div class="panel fraction flexbox">
+                    <div class="panel numerator">
+                        <label class="text-label">numerator
+                            <input type="number" class="input-box"  min="0"/>
+                        </label>
+                    </div>
+                    <div class="separator"></div>
+                    <div class="panel denominator">
+                        <label class="text-label">denominator
+                            <input type="number" class="input-box"  min="0"/>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="compute">Compute</button>
+                <button id="clear">Clear</button>
+            </div>
+        </div>
+        <div class="big-space"></div>
+        <div class="display flexbox">
+            <h3>Whole Number Table</h3>
+            <div class="whole-table table" data-width="25">
+                <table class="colour-table">
+                    <tbody></tbody>
+                </table>
+            </div>
+            <h3>Decimal Table</h3>
+            <div class="decimal-table table" data-width="25">
+                <table class="colour-table">
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div class="legend">
+                <table class="legend">
+                    <tbody>
+                        <tr>
+                            <td class="colour-cell" id="num0">0</td>
+                            <td class="colour-cell" id="num1">1</td>
+                            <td class="colour-cell" id="num2">2</td>
+                            <td class="colour-cell" id="num3">3</td>
+                            <td class="colour-cell" id="num4">4</td>
+                            <td class="colour-cell" id="num5">5</td>
+                            <td class="colour-cell" id="num6">6</td>
+                            <td class="colour-cell" id="num7">7</td>
+                            <td class="colour-cell" id="num8">8</td>
+                            <td class="colour-cell" id="num9">9</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="buttons flexbox">
+                <label for="table-width">Table Width</label>
+                <input type="number" name="table-width" id="table-width" min="1", max="50">
+                <button id="redraw">Redraw</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
