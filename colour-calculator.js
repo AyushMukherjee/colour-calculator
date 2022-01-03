@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function(){
         3: 'aqua',
         4: 'orange',
         5: 'lime',
-        6: 'steelblue',
+        6: 'blue',
         7: 'green',
         8: 'sienna',
         9: 'purple',
